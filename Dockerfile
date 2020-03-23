@@ -1,6 +1,6 @@
 FROM node:7
 WORKDIR /app
-RUN apt install -y apache2
+RUN apt-get update
 COPY package.json /app
 RUN npm install
 COPY . /app
